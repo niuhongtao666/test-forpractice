@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" style="user-select: none">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../angular/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+    <input type="text" ng-model="coun">
+    <div>{{coun}}</div>
+    <div>{{obj}}</div>
+    <div>{{obj.name}}</div>
+    <button ng-click="add(1)">加1</button>
+    <button ng-click="subtract(1)">减1</button>
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+    app.controller("myController",function ($scope) {
+        $scope.coun=0;
+        $scope.obj={
+            "name":"lisi"
+        }
+        $scope.add=function (amount) {
+            $scope.coun=Number($scope.coun)+amount;
+        };
+        $scope.subtract=function (amount) {
+            $scope.coun=Number($scope.coun)-amount;
+        }
+    })
+</script>
+</html>

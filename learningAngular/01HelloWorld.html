@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <script src="../angular/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+    <input type="text" ng-model="clock" placeholder="请输入World">
+    <div>Hello {{clock | date:'yyyy-MM-dd HH:mm:ss Z'}}</div>
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+    app.controller("myController",function ($scope,$timeout) {
+        var timing=function () {
+            $scope.clock=new Date();
+            $timeout(function () {
+                timing();
+            },1000);
+        };
+        timing();
+    })
+</script>
+</html>

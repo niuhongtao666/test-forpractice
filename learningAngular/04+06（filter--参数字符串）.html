@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+    <div>{{["email","iphone","telephone","car","plane"] | filter:"a"}}</div>
+    <!--在页面打印的结果["email","car","plane"]，使用"A"那么结果是一样的，如果字符串的
+    长度大于1，那么需要连续才能在数组中能够进行查找，否则查找不到，如果没有查找到，那么在页面中的打印结果是空数组[]-->
+    <div>{{[{"name":"张三","age":19,"work":"student"},{"name":"里斯","age":20,"work":"teacher"}] | filter:{"name":"张三"} }}</div>
+    <!--在页面中的打印结果是[{"name":"张三","age":19,"work":"student"}]-->
+    <div>{{["Ari","ton","amy"] | filter:isCapitalized}}</div>
+    <!--在页面中的打印结果是["Ari"]-->
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+    app.controller("myController",function ($scope) {
+        $scope.isCapitalized=function (str) {
+            return str[0] == str[0].toUpperCase();
+        }
+    })
+</script>
+</html>

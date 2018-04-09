@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="angular.min.js"></script>
+    <script src="echarts.min.js"></script>
+    <style>
+        canvas{
+            left: -23px!important;
+            width: 179px!important;
+            padding-top: 10px!important;
+        }
+    </style>
+</head>
+<body ng-app="myApp">
+    <div class="panel-body" style="width:179px;height:70px;border: 1px solid red;margin-top: 200px" echarts="searchCostOption" id="searchCost"></div>
+</body>
+<script>
+    var app = angular.module('myApp',[ ]);
+    //echarts基本参数
+    app.factory('$echartsConfig', function () {
+                return {
+
+                   tooltip : {
+                        trigger: 'axis'
+                    },
+                    legend: {
+                        data:[]
+                    },
+                    xAxis: {
+                        type: 'category',
+                        show:false,
+                        boundaryGap: false,
+                        data: ['aa', 'bb', 'cc', 'dd', 'ff', 'hh', 'ii','gg','kk','ll'],
+                        axisLabel:{
+                            //X轴刻度配置
+                            interval:0 ,//0：表示全部显示不间隔；auto:表示自动根据刻度个数和宽度自动设置间隔个数,
+                        }
+                    },
+                    yAxis: {
+                        type: 'value',
+                        show:false
+                    },
+                    series: [{
+                        data: [20,10,30,10,40,30,20,40,10,20],
+                        type: 'line',
+                        areaStyle: {}
+                    }]
+                };
+            })
+            //echarts directive
+            .directive('echarts', ['$echartsConfig','$window', function ($echartsConfig,$window) {
+                return {
+                    restrict: 'A',
+                    link: function (scope, element, attrs) {
+                        if (!scope.$echartsInstance)
+                            scope.$echartsInstance = {};
+                        scope.$watch(attrs.echarts, function () {
+                            var option=angular.extend({},$echartsConfig,scope.$eval(attrs.echarts));
+                            if (option.id) {
+                                scope.$echartsInstance[option.id] = echarts.init(element[0]);
+                                scope.$echartsInstance[option.id].setOption(option);
+                            } else {
+                                scope.$echartsInstance = echarts.init(element[0]);
+                                scope.$echartsInstance.setOption(option);
+                            }
+                        });
+                        $window.onresize = function() {
+                            if(scope.$echartsInstance.searchTimeOption)
+                                scope.$echartsInstance.searchTimeOption.resize();
+                            if(scope.$echartsInstance.searchCostOption)
+                                scope.$echartsInstance.searchCostOption.resize();
+                            if(scope.$echartsInstance.searchNumOption)
+                                scope.$echartsInstance.searchNumOption.resize();
+                        };
+                    }
+                };
+            }])
+</script>
+</html>

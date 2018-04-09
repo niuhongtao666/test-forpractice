@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp"  ng-init="myArr = [{'name':'lisi','age':18,'work':'teacher'},{'name':'Lisi tom','age':20,'work':'driver'},{'name':'xiaogang','age':34,'work':'cook'}]">
+    <div>
+        <input type="text" ng-model="mod"><br>
+        <div ng-repeat="item in myArr | filter:{'name':mod}:false">
+            <!--当input中没有输入数值的时候，在页面上会出现所有的数组数据
+            ，输入数值以后，如果第三个参数为true是利用angualr.equals(expected,actual),进行严格比较，也就是说输入lisi,只会出现myArr中第一项，
+            如果为false,那么输入lisi，数组中的第一项和第二项都会出现,键值中出现相关字段即可-->
+            <p>name:{{item.name}}</p>
+            <p>age:{{item.age}}</p>
+            <p>work:{{item.work}}</p>
+        </div>
+    </div>
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+</script>
+</html>

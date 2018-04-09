@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="form" method="post" action="javascript:;">
+    <input type="file" name="picpath" id="picpath"style="display: none;"
+           onchange="document.form.path.value=this.value" multiple="multiple" accept="image/*" />
+    <input name="path" readonly>
+    <input type="button" value="上传照片" onclick="document.form.picpath.click()">
+</form>
+</body>
+</html>

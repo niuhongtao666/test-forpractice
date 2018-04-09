@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9dad4be2-2132-468a-9ce2-5d797b71a786" name="Default" comment="" />
+    <ignored path="test.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="test" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="04+06+02（filter 第二个参数为函数）.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learningAngular/04+06+02（filter 第二个参数为函数）.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/页面切换/change.css" />
+        <option value="$PROJECT_DIR$/页面切换/change.js" />
+        <option value="$PROJECT_DIR$/页面切换/newChange.html" />
+        <option value="$PROJECT_DIR$/页面切换/change1.html" />
+        <option value="$PROJECT_DIR$/左右布局.html" />
+        <option value="$PROJECT_DIR$/页面切换/changeFade.js" />
+        <option value="$PROJECT_DIR$/页面切换/页面切换淡入淡出.html" />
+        <option value="$PROJECT_DIR$/页面切换/页面切换.html" />
+        <option value="$PROJECT_DIR$/页面切换/212first.html" />
+        <option value="$PROJECT_DIR$/页面切换/212second.html" />
+        <option value="$PROJECT_DIR$/页面切换/changeFade.css" />
+        <option value="$PROJECT_DIR$/tabqiehuan.html" />
+        <option value="$PROJECT_DIR$/tab切换.html" />
+        <option value="$PROJECT_DIR$/learningAngular/01HelloWorld.html" />
+        <option value="$PROJECT_DIR$/learningAngular/$scope + $rootScope.html" />
+        <option value="$PROJECT_DIR$/learningAngular/02$scope + $rootScope.html" />
+        <option value="$PROJECT_DIR$/1.html" />
+        <option value="$PROJECT_DIR$/2.html" />
+        <option value="$PROJECT_DIR$/learningAngular/angular.min.1-1-5.js" />
+        <option value="$PROJECT_DIR$/learningAngular/01+01.html" />
+        <option value="$PROJECT_DIR$/learningAngular/02+01(加1减1小例子).html" />
+        <option value="$PROJECT_DIR$/learningAngular/嵌套控制器.html" />
+        <option value="$PROJECT_DIR$/a-href.html" />
+        <option value="$PROJECT_DIR$/编辑光标.html" />
+        <option value="$PROJECT_DIR$/learningAngular/03+01(表达式解析过程).html" />
+        <option value="$PROJECT_DIR$/type为file显示文字.html" />
+        <option value="$PROJECT_DIR$/learningAngular/03+01(解析angularjs表达式).html" />
+        <option value="$PROJECT_DIR$/learningAngular/截图/03+02（插值表达式）.html" />
+        <option value="$PROJECT_DIR$/learningAngular/03+02（插值表达式）.html" />
+        <option value="$PROJECT_DIR$/圆中黑.html" />
+        <option value="$PROJECT_DIR$/插值字符串.html" />
+        <option value="$PROJECT_DIR$/插值字符串回忆.html" />
+        <option value="$PROJECT_DIR$/大小屏幕.html" />
+        <option value="$PROJECT_DIR$/learningAngular/pingjia.html" />
+        <option value="$PROJECT_DIR$/learningAngular/js/index.js" />
+        <option value="$PROJECT_DIR$/learningAngular/04+01（$filter过滤器lowercase).html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+02(过滤器之uppercase).html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+03(过滤器之number).html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+04(currency货币过滤器).html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+05(date过滤器).html" />
+        <option value="$PROJECT_DIR$/0向上取整.html" />
+        <option value="$PROJECT_DIR$/将时间转换成时间戳.css" />
+        <option value="$PROJECT_DIR$/将时间转成时间戳.html" />
+        <option value="$PROJECT_DIR$/IE滤镜.html" />
+        <option value="$PROJECT_DIR$/图片上传/imageUpload.html" />
+        <option value="$PROJECT_DIR$/test1.html" />
+        <option value="$PROJECT_DIR$/时间戳转成日期.html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+06（filter--参数字符串）.html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+.html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+06+01（filter-第二个参数为true,false）.html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+06+02（filter 第二个参数为函数）.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-8" />
+    <option name="y" value="23" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="learningAngular" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\test" />
+      <recent name="C:\test\图片上传" />
+      <recent name="C:\test\页面切换" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\test\learningAngular" />
+      <recent name="C:\test\页面切换" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="通过AngularJS实现图片上传及缩略图展示第二例.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/test/通过AngularJS实现图片上传及缩略图展示第二例.html" />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.通过AngularJS实现图片上传及缩略图展示第二例.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9dad4be2-2132-468a-9ce2-5d797b71a786" name="Default" comment="" />
+      <created>1516607917688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516607917688</updated>
+      <workItem from="1516607918862" duration="12531000" />
+      <workItem from="1516694561222" duration="16696000" />
+      <workItem from="1516958204003" duration="1675000" />
+      <workItem from="1517464922975" duration="6260000" />
+      <workItem from="1517475066301" duration="869000" />
+      <workItem from="1517561103529" duration="33259000" />
+      <workItem from="1518060229942" duration="31055000" />
+      <workItem from="1519612953346" duration="9292000" />
+      <workItem from="1520237192410" duration="2056000" />
+      <workItem from="1520310114340" duration="43547000" />
+      <workItem from="1520940581658" duration="10000" />
+      <workItem from="1520941343657" duration="9637000" />
+      <workItem from="1521080701357" duration="12714000" />
+      <workItem from="1521113845892" duration="62000" />
+      <workItem from="1521430916932" duration="5315000" />
+      <workItem from="1521535037132" duration="2789000" />
+      <workItem from="1521698365427" duration="27599000" />
+      <workItem from="1522054984364" duration="627000" />
+      <workItem from="1522650507121" duration="1950000" />
+      <workItem from="1522665784684" duration="65000" />
+      <workItem from="1522726670122" duration="814000" />
+      <workItem from="1522728117370" duration="145000" />
+      <workItem from="1523162375836" duration="1208000" />
+      <workItem from="1523249641369" duration="2564000" />
+      <workItem from="1523257240614" duration="5532000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="228271000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21597221" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2203514" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/页面切换/页面切换.html" />
+    <entry file="file://$PROJECT_DIR$/页面切换/changeFade.css" />
+    <entry file="file://$PROJECT_DIR$/页面切换/changeFade.js" />
+    <entry file="file://$PROJECT_DIR$/页面切换/页面切换淡入淡出.html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/02$scope + $rootScope.html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/angular.min.1-1-5.js" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/01+01(angular1.2版本之前控制器的写法).html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/02+01(加1减1小例子).html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/嵌套控制器.html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/03+01(表达式解析过程).html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/pingjia.html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+01（$filter过滤器lowercase).html" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="226" selection-start-line="226" selection-end-line="226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/将时间转换成时间戳.html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/01HelloWorld.html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+02(过滤器之uppercase).html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+03(过滤器之number).html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/03+02（插值表达式）.html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/03+01(解析angularjs表达式).html" />
+    <entry file="file://$PROJECT_DIR$/图片上传/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/通过AngularJS实现图片上传及缩略图展示.html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+05(date过滤器).html" />
+    <entry file="file://$PROJECT_DIR$/work.jpg" />
+    <entry file="file://$PROJECT_DIR$/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/图片上传/imageUpload.html" />
+    <entry file="file://$PROJECT_DIR$/type为file显示文字.html" />
+    <entry file="file://$PROJECT_DIR$/angular.css" />
+    <entry file="file://$PROJECT_DIR$/IE滤镜.html" />
+    <entry file="file://$PROJECT_DIR$/编辑光标.html" />
+    <entry file="file://$PROJECT_DIR$/插值字符串回忆.html" />
+    <entry file="file://$PROJECT_DIR$/插值字符串.html" />
+    <entry file="file://$PROJECT_DIR$/2.html" />
+    <entry file="file://$PROJECT_DIR$/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0向上取整.html" />
+    <entry file="file://$PROJECT_DIR$/a-href.html" />
+    <entry file="file://$PROJECT_DIR$/angularjs 分页.html" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/main.html" />
+    <entry file="file://$PROJECT_DIR$/tab切换.html" />
+    <entry file="file://$PROJECT_DIR$/test2.html" />
+    <entry file="file://$PROJECT_DIR$/加号按钮.html" />
+    <entry file="file://$PROJECT_DIR$/圆中黑.html" />
+    <entry file="file://$PROJECT_DIR$/大小屏幕.html" />
+    <entry file="file://$PROJECT_DIR$/将时间转成时间戳.html" />
+    <entry file="file://$PROJECT_DIR$/test1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/时间戳转成日期.html" />
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+04(currency货币过滤器).html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+06+01（filter-第二个参数为true,false）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+06（filter--参数字符串）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+06+02（filter 第二个参数为函数）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

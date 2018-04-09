@@ -1,0 +1,194 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "微软雅黑";
+}
+.wrap,ul,li,video{
+	width: 100%;
+}
+li{
+	list-style: none;
+}
+.log{
+	width: 150px;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.log img{
+	width: 100%;
+}
+#dialog{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:95;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	background: #000;
+}
+/*不显示控件*/
+video::-webkit-media-controls,
+video::-moz-media-controls,
+video::-webkit-media-controls-enclosure{
+    display:none !important;
+}
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-panel-container,
+video::-webkit-media-controls-start-playback-button {
+    display:none !important;
+    -webkit-appearance: none;
+}
+button{
+	border: 0;
+	outline: none;
+	background: #fff;
+	color: black;
+	padding: 10px 20px;
+	font-size: 25px;
+	padding: 10px 20px;
+}
+#ask-btn{
+	position:fixed;
+	right:5%;
+	bottom:5%;
+	z-index: 99;
+	border-radius: 38px;
+}
+#gongdan-btn{
+	position:fixed;
+	right:0;
+	top:0;
+	padding: 20px 30px;
+	z-index: 99;
+	/*opacity: 0;
+	filter:alpha(opacity=0);*/
+}
+/*呼叫服务*/
+.doing,.do{
+	width: 100%;
+	margin: 0 auto;
+}
+.doing span{
+	margin-left: 6px;
+}
+.doing{
+	font-size: 50px;
+	text-align: center;
+}
+.do{
+	display: none;
+	position: relative;
+}
+.do p{
+	font-size: 40px;
+	text-align: center;
+}
+#doTime{
+	font-size: 150px;
+}
+.userName{
+	margin-right: 30px;
+	font-size: 70px;
+}
+#stop-btn{
+	position:absolute;
+	right:0px;
+	top:20%;
+	z-index: 99;
+	background: #ccc;
+	border-radius: 15px 0 0 15px;
+	padding: 150px 25px;
+	text-align: center;
+	/*opacity: 0;
+	filter:alpha(opacity=0);*/
+}
+/*客户评价*/
+.score{
+	width: 100%;
+}
+.message{
+	width: 100%;
+}
+.info{
+	width: 20%;
+	float: left;
+	position: relative;
+}
+.hello{
+	width: 80%;
+	float: left;
+}
+dl{
+	width: 150px;
+	height: 240px;
+	margin-top: -120px;
+	margin-left: -75px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	font-size: 18px;
+}
+dl dt{
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+dl dt img{
+	width: 100%;
+	vertical-align: middle;
+}
+dl p span.userName{
+	font-size: 18px;
+}
+dl dd{
+	width: 100%;
+	height: 30%;
+}
+dl dd p{
+	height: 33.33%;
+	text-indent: 15px;
+}
+.hello p{
+	text-align: center;
+	font-size: 35px;
+}
+.score ul li{
+	float: left;
+	width: 10%;
+	height: 100%;
+	position: relative;
+}
+.score ul li div{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 30px;
+	text-align: center;
+	overflow: hidden;
+}
+.score ul li div.bgd_img{
+	z-index: 5;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+.score ul li div.num{
+	z-index: 10;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+.score ul li div.score_img{
+	z-index: 20;
+	/*display: none;*/
+	opacity: 0;
+}
+.score ul li div img{
+	width: 100%;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过AngularJS实现图片上传及缩略图展示第二例子</title>
+    <script src="angular/angular.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #one-input{
+            width: 68px;
+            height: 22px;
+            border: 1px solid red;
+            opacity: 0;
+        }
+        #ig{
+            width: 68px;
+            height: 22px;
+            position: relative;
+            top: 4px;
+            left: 74px;
+        }
+    </style>
+</head>
+<body ng-app="app" ng-controller="controlName">
+<section>
+    <div>
+        <form>
+            <div>
+                <div ng-repeat="item in thumb" style="border: 1px solid red;display: inline-block">
+                    <!-- 采用angular循环的方式，对存入thumb的图片进行展示 -->
+                    <label>
+                        <img ng-src="{{item}}"/>
+                    </label>
+                    <span ng-if="item.imgSrc" ng-click="img_del($index)">哈哈哈</span>
+                </div>
+                <div ng-repeat="item in thumb_default">
+                    <!-- 这里之所以写个循环，是为了后期万一需要多个‘加号’框 -->
+                    <img src="businessName.png" alt="" id="ig">
+                    <label>
+                        <input type="file" id="one-input"  multiple="multiple" file-model="images" onchange="angular.element(this).scope().img_upload(this.files)"/>
+                    </label>
+                </div>
+            </div>
+            <!--<input type="submit" name="" value="提 交" />-->
+        </form>
+    </div>
+</section>
+</section>
+</body>
+<script>
+    angular.module('app',[]).controller('controlName', ['$scope', '$http', function($scope, $http) {
+        $scope.reader = new FileReader();   //创建一个FileReader接口
+        $scope.thumb = {};      //用于存放图片的base64
+        $scope.thumb_default = {    //用于循环默认的‘加号’添加图片的框
+            1111:{},
+//            2222:{}
+        };
+
+        $scope.img_upload = function(files) {       //单次提交图片的函数
+                console.log(files);
+////               for(var key in files){
+//                    $scope.guid = (new Date()).valueOf();   //通过时间戳创建一个随机数，作为键名使用
+//                    var val=files[0];
+//                    console.log(val);
+//                    $scope.reader.readAsDataURL(val);  //FileReader的方法，把图片转成base64
+//                    $scope.reader.onload = function (ev) {
+//                        $scope.$apply(function () {
+//                            $scope.thumb[$scope.guid] = {
+//                                imgSrc: ev.target.result,  //接收base64
+//                            }
+//                        });
+//                    };
+////                }
+//            console.log( $scope.thumb);
+//            console.log(files);
+//            console.log($scope.guid);
+//            var data = new FormData();      //以下为像后台提交图片数据
+//            data.image= files[0];
+//            data.guid=$scope.guid;
+//            console.log(data);
+            var postData = {};
+            for(var i=0;i<files.length;i++){
+                postData['img['+i+']']=files[i];
+            }
+            console.log(postData);
+
+            var promise = postMultipart('https://api.funcgo.com/v1/getimgurl', postData);
+            promise.then(function  successCallback(response) {
+                console.log(response);
+                $scope.thumb=response.data.data;
+            },function errorCallback(response) {
+
+            })
+            function postMultipart(url, data) {
+                var fd = new FormData();
+                angular.forEach(data, function(val, key) {
+                    fd.append(key, val);
+                });
+                var args = {
+                    method: 'POST',
+                    url: url,
+                    data: fd,
+                    headers: {'Content-Type': undefined},
+                    transformRequest: angular.identity
+                };
+                return $http(args);
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//            $http({
+//                method:'post',
+//                url:'https://api.funcgo.com/v1/getimgurl',
+//                headers: {'Content-Type': undefined},
+//                transformRequest: angular.identity,
+//                data:data,
+//            }).then(function  successCallback(response) {
+//                console.log(response);
+//            },function errorCallback(response) {
+//
+//            });
+        };
+
+
+
+
+
+
+
+
+
+        $scope.img_del = function(key) {    //删除，删除的时候thumb和form里面的图片数据都要删除，避免提交不必要的
+            var guidArr = [];
+            for(var p in $scope.thumb){
+                guidArr.push(p);
+            }
+            delete $scope.thumb[guidArr[key]];
+            delete $scope.form.image[guidArr[key]];
+            console.log($scope.thumb);
+        };
+//        $scope.submit_form = function(){    //图片选择完毕后的提交，这个提交并没有提交前面的图片数据，只是提交用户操作完毕后，
+////            到底要上传哪些，通过提交键名或者链接，后台来判断最终用户的选择,整个思路也是如此
+//            $http({
+//                method: 'post',
+//                url: '/comm/test.php',
+//                data:$scope.form,
+//            }).success(function(data) {
+//                console.log(data);
+//            })
+//        };
+
+    }]);
+</script>
+</html>

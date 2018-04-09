@@ -1,0 +1,94 @@
+/*CSS源代码*/
+body{
+    background:#CFCFCF;
+    margin:0;
+    padding:0;
+}
+
+.page        {
+    bottom:0;
+    padding-top:200px;
+    position:absolute;
+    text-align:center;
+    top:0;
+    width:100%;
+}
+
+.page h1    { font-size:40px; }
+.page p     { opacity:.8}
+.page a     { margin-top:40px;opacity:.5 }
+
+.page-home      { background:#00D0BC; color:#00907c; }
+.page-about     { background:#E59400; color:#a55400; }
+.page-contact   { background:#ffa6bb; color:#9e0000; }
+
+@keyframes rotateFall {
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+    75% {opacity: 0.75;}/*结束状态 透明度为1*/
+    50% {opacity: 0.5;}/*结束状态 透明度为1*/
+    25% {opacity: 0.25;}/*过渡状态 透明度为0*/
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+    75% {opacity: 0.75;}/*结束状态 透明度为1*/
+    50% {opacity: 0.5;}/*结束状态 透明度为1*/
+    25% {opacity: 0.25;}/*过渡状态 透明度为0*/
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+}
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+    25% {opacity: 0.25;}/*过渡状态 透明度为0*/
+    50% {opacity: 0.5;}/*结束状态 透明度为1*/
+    75% {opacity: 0.75;}/*结束状态 透明度为1*/
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+    25% {opacity: 0.25;}/*过渡状态 透明度为0*/
+    50% {opacity: 0.5;}/*结束状态 透明度为1*/
+    75% {opacity: 0.75;}/*结束状态 透明度为1*/
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+    25% {opacity: 0.25;}/*过渡状态 透明度为0*/
+    50% {opacity: 0.5;}/*结束状态 透明度为1*/
+    75% {opacity: 0.75;}/*结束状态 透明度为1*/
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    100% {opacity: 1;}/*结束状态 透明度为1*/
+    75% {opacity: 0.75;}/*结束状态 透明度为1*/
+    50% {opacity: 0.5;}/*结束状态 透明度为1*/
+    25% {opacity: 0.25;}/*过渡状态 透明度为0*/
+    0% {opacity: 0;}/*初始状态 透明度为0*/
+}
+
+.ng-enter       { z-index: 8888; }
+.ng-leave       { z-index: 9999; }
+
+/* page specific animations ------------------------ */
+
+/* home -------------------------- */
+.page-home.ng-enter         { animation: scaleUp 1s both ease-out; }
+.page-home.ng-leave         { animation: rotateFall 1s both ease-out; }
+
+/* about ------------------------ */
+.page-about.ng-enter        { animation:slideInRight 1s both ease-out; }
+.page-about.ng-leave        { animation:slideOutLeft 1s both ease-out; }
+
+/* contact ---------------------- */
+.page-contact.ng-leave      { animation: rotateOutNewspaper 1s both ease-out; }
+.page-contact.ng-enter      { animation:slideInUp 1s both ease-out; }

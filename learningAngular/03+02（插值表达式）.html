@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../angular/angular.min.js"></script>
+<body ng-app="myApp" ng-controller="myController">
+    <input type="email" ng-model="to" placeholder="Recipient">
+    <textarea name="" id="" cols="30" rows="10" ng-model="emailBody"></textarea>
+    <pre>{{previewText}}</pre>
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+    app.controller("myController",function ($scope,$interpolate) {
+        $scope.$watch("emailBody",function (body) {
+            if(body){
+                var template=$interpolate(body);
+                $scope.previewText=template({to:$scope.to});
+            }
+        })
+    })
+</script>
+</html>

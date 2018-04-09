@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myController" ng-init="myArr = [{'name':'jerry','age':20},{'name':'jerry Niu','age':10},{'name':'jimi','age':34}]">
+    <input type="text" ng-model="modl">
+    <div ng-repeat="item in myArr | filter:{'name':modl}:isEqual">
+        <p>name:{{item.name}}</p>
+        <p>age:{{item.age}}</p>
+    </div>
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+    app.controller("myController",function ($scope) {
+        $scope.isEqual=function (expectedVal,actualVal) {
+            return angular.equals(expectedVal.toUpperCase(),actualVal.toUpperCase());
+        /*   此处处理了预期值，和实际数值的严格比较。如果input没有输入数值，那么数组myArr的数据会全部呈现出来，如果输入jerry,那么只会出现第一项，和第二个参数为false时候的
+            情况是有差别的*/
+        }
+    })
+</script>
+</html>

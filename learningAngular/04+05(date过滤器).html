@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../angular/angular.min.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+    <div>{{today | date}} ****date</div>
+    <div>{{today | date:"medium"}}***date:"medium"</div>
+    <div>{{today | date:"short"}}***date:"short"</div>
+    <div>{{today | date:"fullDate"}}*** date:"fullDate"</div>
+    <div>{{today | date:"longDate"}}***date:"longDate"</div>
+    <div>{{today | date:"mediumDate"}}***date:"mediumDate"默认</div>
+    <div>{{today | date:"shortDate"}}***date:"shortDate"</div>
+    <div>{{today | date:"mediumTime"}}***date:"mediumTime"</div>
+    <div>{{today | date:"shortTime"}}***date:"shortTime"</div>
+    <div>{{today | date:"yyyy"}}***date:"yyyy"</div>
+    <div>{{today | date:"yy"}}***date:"yy"</div>
+    <div>{{today | date:"y"}}***date:"y"</div>
+    <div>{{today | date:"MMMM"}}***date:"MMMM"</div>
+    <div>{{today | date:"MMM"}}***date:"MMM"</div>
+    <div>{{today | date:"MM"}}***date:"MM"</div>
+    <div>{{today | date:"M"}}***date:"M"</div>
+    <div>{{today | date:"dd"}}***date:"dd"</div>
+    <div>{{today | date:"d"}}***date:"d"</div>
+    <div>{{today | date:"EEEE"}}***date:"EEEE"</div>
+    <div>{{today | date:"EEE"}}***date:"EEE"</div>
+    <div>{{today | date:"HH"}}***date:"HH"</div>
+    <div>{{today | date:"H"}}***date:"H"</div>
+    <div>{{today | date:"hh"}}***date:"hh"</div>
+    <div>{{today | date:"h"}}***date:"h"</div>
+    <div>{{today | date:"mm"}}***date:"mm"</div>
+    <div>{{today | date:"m"}}***date:"m"</div>
+    <div>{{today | date:"ss"}}***date:"ss"</div>
+    <div>{{today | date:"s"}}***date:"s"</div>
+    <div>{{today | date:".sss"}}***date:".sss"毫秒数</div>
+    <div>{{today | date:"a"}}***date:"a"上下文标识</div>
+    <div>{{today | date:"Z"}}***date:"Z"四位时区标识</div>
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+    app.controller("myController",function ($scope) {
+        $scope.today=new Date();
+    })
+</script>
+</html>

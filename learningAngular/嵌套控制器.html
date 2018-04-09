@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../angular/angular.min.js"></script>
+</head>
+<body>
+    <div ng-controller="parentController">
+        <div ng-controller="childController">
+            <a ng-click="sayHello()">say Hello</a>
+        </div>
+        {{obj}}
+    </div>
+</body>
+<script>
+    var app=angular.module('myApp',[]);
+    app.controller('parentController',function ($scope) {
+        $scope.obj={'age':18};
+    })
+    app.controller('childController',function ($scope) {
+        $scope.sayHello=function () {
+            $scope.obj.name='lisi';
+        }
+    })
+</script>
+</html>

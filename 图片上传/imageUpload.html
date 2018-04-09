@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax上传文件</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #district{
+            width: 333px;
+            height:87px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            padding-left: 34px;
+            padding-top: 25px;
+        }
+        #outSide{
+            width: 112px;
+            height: 30px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+        #outSide div{
+            width: 112px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            position: absolute;
+            left:0px;
+            top:0px;
+            background: lightgrey;
+        }
+        #btnClick{
+            display: inline-block;
+            width: 112px;
+            height: 30px;
+            position: relative;
+            top: -9px;
+            left: 32px;
+            box-sizing: border-box;
+            background: lightgrey;
+            line-height: 30px;
+            text-align: center;
+        }
+        #outSide #userface{
+            width: 112px;
+            height: 30px;
+            position: absolute;
+            left:0px;
+            top:0px;
+            opacity: 0;
+            filter: alpha(opacity=0);
+        }
+    </style>
+</head>
+<body>
+<div id="district">
+    <input id="token" type="hidden">
+    <span id="outSide">
+        <div>选择文件</div>
+        <input id="userface" type="file" onchange="preview(this)">
+    </span>
+    <div id="preview" style="display: none"></div>
+    <span id="btnClick">上传</span>
+    <input type="text" id="imageUrl" style="display: none"><br>
+</div>
+<script>
+//    var token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2FwaS5mdW5jZ28uY29tL3YxL2F1dGhvcml6YXRpb25zIiwiaWF0IjoxNTIxNzcyMjM2LCJleHAiOjE1MjE4MjQwNzYsIm5iZiI6MTUyMTc3MjIzNiwianRpIjoiNTRZbVhVOHpzdE9IanRoYiIsInN1YiI6MjE0MywicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.ynoJiUTiZHFK_qPhVfuPC6y90ct7KW87DZS4NZrRsJU";
+    var userface=document.getElementById('userface');
+    var btnClick=document.getElementById('btnClick');
+    var imgUrl=document.getElementById('imageUrl');
+    btnClick.onclick=function () {
+        var getToken=document.getElementById('token');
+        var token=getToken.value;
+//        console.log(token);
+        var formData = new FormData();
+        console.log( userface.files[0]);
+        formData.append("img[0]", userface.files[0]);
+         var xhr = new XMLHttpRequest();
+         xhr.open('post', 'https://api.funcgo.com/v1/users/uploadheadimg');
+         xhr.setRequestHeader("Authorization","Bearer"+token);
+         xhr.send(formData);
+         xhr.onreadystatechange = function () {
+         // 这步为判断服务器是否正确响应
+             if (xhr.readyState == 4 && xhr.status == 200) {
+             console.log(xhr.responseText);
+                 var obj=JSON.parse(xhr.responseText);
+                 console.log(obj);
+                 imgUrl.value=obj.data;
+             }
+         };
+    };
+    function preview(file) {
+        console.log(file);
+        var prevDiv = document.getElementById('preview');
+        if (file.files && file.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (evt) {
+                console.log(evt);
+                prevDiv.innerHTML = '<img src="' + evt.target.result + '" />';
+            }
+            reader.readAsDataURL(file.files[0]);
+        } else {
+            prevDiv.innerHTML ='<img class="img" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'">';//（IE滤镜）针对ie9及其以下浏览器展示本地文件的方法
+        }
+    }
+</script>
+</body>
+</html>

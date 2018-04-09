@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    $.ajax({
+        url:"https://api.funcgo.com/v1/enterprise/setverify",
+        type:"post",
+        data:{company_phone:"18333602833"},
+        dataType:"json",
+        success:function (data) {
+            console.log(data);
+        }
+    })
+</script>
+</html>

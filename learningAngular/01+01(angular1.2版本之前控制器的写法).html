@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular.min.1-1-5.js"></script>
+</head>
+<body ng-controller="myFun">
+    <input type="text" ng-model="third">
+    <div>Hello {{third}}</div>
+</body>
+<script>
+//    var app=angular.module("myApp",[]);
+    function myFun($scope) {
+        $scope.third="哈哈哈"
+    };
+</script>
+</html>

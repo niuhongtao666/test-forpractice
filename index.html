@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="angular.min.js"></script>
+    <script src="echarts.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <echart-source></echart-source>
+</body>
+<script>
+    var app = angular.module('myApp',[ ]);
+    app.directive('echartSource', [function() {
+        return {
+            restrict: 'AE',
+            scope: {
+                echartSource: '='
+            },
+            link: link
+        };
+        console.log(app);
+        function link(scope, element, attr) {
+            var my_Chart = echarts.init(element[0]);
+
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    text: '折线图'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    foramtter:function(params){
+                        console.log(params)
+//                这里处理你想要的数据
+//                 return ;
+                    }
+                },
+                legend: {
+                    data:['总访问量']
+                },
+                grid: {
+                    left: '1%',
+                    right: '2%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                toolbox: {
+                    feature: {
+                        saveAsImage: {}
+//                mark:{show:false}
+                    }
+
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: ['00点','01点','02点','03点','04点','05点','06点','07点','08点','09点','10点','11点','12点','13点','14点','15点','16点','17点','18点','19点','20点','21点','22点','23点']
+                },
+                yAxis: [{
+                    type: 'value',
+                    boundaryGap: false,
+                    splitNumber:6,
+                    scale: true,
+//            控制y轴线是否显示
+                    axisLine:{show:false},
+//            控制网格线是否显示
+                    splitLine:{
+                        show:true
+                    },
+//            去除y轴上的刻度线
+                    axisTick: {
+                        show: false
+                    }
+                }],
+                series: [
+                    {
+                        name:'总访问量',
+                        type:'line',
+                        stack: '总量',
+                        itemStyle : {
+                            normal : {
+                                color:'#CA77FF',
+                                lineStyle:{
+                                    color:'#CA77FF'
+                                }
+                            }
+                        },
+                        data:[200, 150, 100, 60, 150, 430, 560,600,800,850,1000,1050,200, 150, 100, 60, 150, 430, 560,600,800,850,1000,1050]
+                    }
+//            {
+//                foramtter:{
+//                        "①广东深圳":234,
+//                        "①广东东莞":234,
+//                        "①广东惠州":123,
+//                }
+//            }
+                ]
+            };
+            // 使用刚指定的配置项和数据显示图表。
+            my_Chart.setOption(option);
+
+            // 双向传值
+            // scope.$watch('echart', function(n, o) {
+            //  if (n === o || !n) return;
+            //  myChart.setOption(n);
+            // });
+
+            //当浏览器窗口发生变化的时候调用div的resize方法
+            window.addEventListener('resize', chartResize);
+
+            scope.$on('$destory', function() {
+                window.removeEventListener('resize', chartResize);
+            })
+
+            function chartResize() {
+                my_Chart.resize();
+            }
+        }
+    }]);
+</script>
+</html>

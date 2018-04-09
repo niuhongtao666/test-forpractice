@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过AngularJS实现图片上传及缩略图展示</title>
+    <script src="angular/angular.min.js"></script>
+</head>
+<body ng-app="app" ng-controller="UploaderController">
+<input type="text" ng-model="orderForm.name">
+<input type="file" custom-on-change="chooseOrderImage" name="orderImage" accept="image/jpg,image/jpeg,image/png,image/gif"/>
+<div ng-click="doClickMyInput()">
+    <img ng-if="!haveChange" ng-src="images/info-card-upload.jpg">
+    <img ng-if="haveChange" ng-src="{{imageView}}">
+</div>
+<input type="button" ng-click="doSubmitOrder()" value="确认">
+</body>
+<script>
+    var myApp=angular.module('app',[])
+    myApp.controller("myController",function($scope,$http,fileReader){
+        //...
+        $scope.orderForm = {
+            name: '',
+            message: '',
+            image: ''
+        };
+        $scope.haveChange = false;
+        $scope.fileName = "";
+        $scope.doClickMyInput = function(){
+            angular.element("input[name=orderImage]").click();
+        };
+        $scope.chooseOrderImage = function(event){
+            $scope.$apply(function(){
+                //得到文件
+                $scope.orderForm.image = (event.srcElement || event.target).files[0];
+                //得到文件名
+                $scope.fileName = $scope.orderForm.image.name;
+            });
+            $scope.haveChange = true;
+            //生成预览图
+            fileReader.readAsDataUrl($scope.orderForm.image, $scope).then(function(result){
+                $scope.imageView = result;
+            });
+        };
+    });
+    myApp.directive('customOnChange',function(){
+        return {
+            restrict:'A',
+            link:function(scope,element,attrs){
+                var onChangeHandler = scope.$eval(attrs.customOnChange);
+                element.bind('change',onChangeHandler);
+            }
+        };
+    });
+    myApp.factory('fileReader', ["$q", "$log", function($q, $log){
+        var onLoad = function(reader, deferred, scope) {
+            return function () {
+                scope.$apply(function () {
+                    deferred.resolve(reader.result);
+                });
+            };
+            //将缩略图进行压缩
+            /*return function (e) {
+             scope.$apply(function () {
+             var img = document.createElement("img");
+             img.src = e.target.result;
+             var canvas = document.createElement("canvas");
+             var ctx = canvas.getContext("2d");
+             ctx.drawImage(img, 0, 0);
+             var MAX_WIDTH = 600;
+             var MAX_HEIGHT = 384;
+             img.onload = function(){
+             var width = img.width;
+             var height = img.height;
+             if (width > height) {
+             if (width > MAX_WIDTH) {
+             height *= MAX_WIDTH / width;
+             width = MAX_WIDTH;
+             }
+             } else {
+             if (height > MAX_HEIGHT) {
+             width *= MAX_HEIGHT / height;
+             height = MAX_HEIGHT;
+             }
+             }
+             canvas.width = width;
+             canvas.height = height;
+             var ctx = canvas.getContext("2d");
+             ctx.drawImage(img, 0, 0, width, height);
+             var dataURL = canvas.toDataURL('image/jpeg',0.2);
+             deferred.resolve(dataURL);
+             };
+             });
+             };*/
+        };
+        var onError = function (reader, deferred, scope) {
+            return function () {
+                scope.$apply(function () {
+                    deferred.reject(reader.result);
+                });
+            };
+        };
+        var getReader = function(deferred, scope) {
+            var reader = new FileReader();
+            reader.onload = onLoad(reader, deferred, scope);
+            reader.onerror = onError(reader, deferred, scope);
+            return reader;
+        };
+        var readAsDataURL = function (file, scope) {
+            var deferred = $q.defer();
+            var reader = getReader(deferred, scope);
+            reader.readAsDataURL(file);
+            return deferred.promise;
+        };
+        return {
+            readAsDataUrl: readAsDataURL
+        };
+    }])
+</script>
+</html>
