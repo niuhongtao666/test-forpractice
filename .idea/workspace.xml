@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9dad4be2-2132-468a-9ce2-5d797b71a786" name="Default" comment="" />
+    <list default="true" id="9dad4be2-2132-468a-9ce2-5d797b71a786" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/translate/datouwang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translate/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translate/md5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,12 +23,33 @@
     <favorites_list name="test" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="04+06+02（filter 第二个参数为函数）.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/learningAngular/04+06+02（filter 第二个参数为函数）.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="translate.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/translate/translate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="60">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datouwang.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/translate/datouwang.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trans.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/translate/trans.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -33,19 +59,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/页面切换/change.css" />
-        <option value="$PROJECT_DIR$/页面切换/change.js" />
-        <option value="$PROJECT_DIR$/页面切换/newChange.html" />
-        <option value="$PROJECT_DIR$/页面切换/change1.html" />
         <option value="$PROJECT_DIR$/左右布局.html" />
         <option value="$PROJECT_DIR$/页面切换/changeFade.js" />
         <option value="$PROJECT_DIR$/页面切换/页面切换淡入淡出.html" />
@@ -93,6 +118,10 @@
         <option value="$PROJECT_DIR$/learningAngular/04+.html" />
         <option value="$PROJECT_DIR$/learningAngular/04+06+01（filter-第二个参数为true,false）.html" />
         <option value="$PROJECT_DIR$/learningAngular/04+06+02（filter 第二个参数为函数）.html" />
+        <option value="$PROJECT_DIR$/li+li.html" />
+        <option value="$PROJECT_DIR$/changeLanguage.html" />
+        <option value="$PROJECT_DIR$/translate/translate.html" />
+        <option value="$PROJECT_DIR$/translate/trans.js" />
       </list>
     </option>
   </component>
@@ -102,12 +131,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-8" />
-    <option name="y" value="23" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="64" />
+    <option name="y" value="71" />
+    <option name="width" value="1440" />
+    <option name="height" value="829" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -123,7 +153,7 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="learningAngular" type="462c0819:PsiDirectoryNode" />
+              <item name="translate" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -143,13 +173,14 @@
     <property name="node.js.selected.package.prettier" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\test" />
-      <recent name="C:\test\图片上传" />
-      <recent name="C:\test\页面切换" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\test\learningAngular" />
+      <recent name="C:\test\页面切换" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/translate" />
+      <recent name="C:\test" />
+      <recent name="C:\test\图片上传" />
       <recent name="C:\test\页面切换" />
     </key>
   </component>
@@ -257,27 +288,29 @@
       <workItem from="1522728117370" duration="145000" />
       <workItem from="1523162375836" duration="1208000" />
       <workItem from="1523249641369" duration="2564000" />
-      <workItem from="1523257240614" duration="5532000" />
+      <workItem from="1523257240614" duration="5704000" />
+      <workItem from="1523334883546" duration="561000" />
+      <workItem from="1523348979943" duration="3211000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228271000" />
+    <option name="totallyTimeSpent" value="232215000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="64" y="71" width="1440" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21597221" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -320,11 +353,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/页面切换/页面切换.html" />
-    <entry file="file://$PROJECT_DIR$/页面切换/changeFade.css" />
-    <entry file="file://$PROJECT_DIR$/页面切换/changeFade.js" />
-    <entry file="file://$PROJECT_DIR$/页面切换/页面切换淡入淡出.html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/02$scope + $rootScope.html" />
     <entry file="file://$PROJECT_DIR$/learningAngular/angular.min.1-1-5.js" />
     <entry file="file://$PROJECT_DIR$/learningAngular/01+01(angular1.2版本之前控制器的写法).html" />
     <entry file="file://$PROJECT_DIR$/learningAngular/02+01(加1减1小例子).html" />
@@ -359,13 +387,6 @@
     <entry file="file://$PROJECT_DIR$/插值字符串回忆.html" />
     <entry file="file://$PROJECT_DIR$/插值字符串.html" />
     <entry file="file://$PROJECT_DIR$/2.html" />
-    <entry file="file://$PROJECT_DIR$/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0向上取整.html" />
     <entry file="file://$PROJECT_DIR$/a-href.html" />
     <entry file="file://$PROJECT_DIR$/angularjs 分页.html" />
@@ -385,9 +406,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/时间戳转成日期.html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/04+04(currency货币过滤器).html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/learningAngular/04+06+01（filter-第二个参数为true,false）.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -404,8 +422,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learningAngular/04+06+02（filter 第二个参数为函数）.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/li+li.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changeLanguage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translate/md5.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translate/datouwang.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translate/translate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translate/trans.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
