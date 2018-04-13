@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<title></title>
+		<style>
+			body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+			.catalog{padding:10px 0 5px;overflow: hidden;position:fixed;left:0;top:0;z-index:999;background:#fff;}
+			.catalog a{float: left;width: 16.6666%;display: block;text-align: center;white-space: nowrap; line-height:36px; font-size:17px;}
+			.cur {color:#267ed9;}
+			.sp1,.sp2 {height:36px;line-height:36px;font-size:12px;}
+		</style>
+		<script src="js/jquery.min.js"></script>
+    		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=nSxiPohfziUaCuONe4ViUP2N"></script>
+	</head>
+	<body>
+		<div class="catalog">
+            <a onclick="javascript:searchSthing('银行');return false;">银行</a>
+            <a onclick="javascript:searchSthing('公交站');return false;">公交</a>
+            <a onclick="javascript:searchSthing('地铁站');return false;">地铁</a>
+            <a onclick="javascript:searchSthing('医院');return false;">医院</a>
+            <a onclick="javascript:searchSthing('商场');return false;">商场</a>
+            <a onclick="javascript:searchSthing('学校');return false;">学校</a>
+            <a onclick="javascript:searchSthing('酒店');return false;">酒店</a>
+            <a onclick="javascript:searchSthing('餐厅');return false;">餐厅</a>
+            <a onclick="javascript:searchSthing('邮局');return false;"> 邮局</a>
+            <a onclick="javascript:searchSthing('娱乐');return false;"></img> 娱乐</a>
+			<span class="sp2" onclick="javascript:showMap();">地图显示</span>
+			<span class="sp1" onclick="javascript:hideMap();">列表显示</span>
+		</div>
+		<div id="allmap"></div>
+		<div id="results" style="display:none;padding-top:98px;"></div>
+	</body>
+	<script>
+		var map = new BMap.Map("allmap");
+		var point = new BMap.Point(116.404, 39.915);
+		map.centerAndZoom(point,15);
+		var geolocation = new BMap.Geolocation();
+		geolocation.getCurrentPosition(function(r){
+			if(this.getStatus() == BMAP_STATUS_SUCCESS){
+				var icon = new BMap.Icon('http://wx.58haha.cn/1.png', new BMap.Size(20, 32), {
+					anchor: new BMap.Size(10, 30)
+				});
+				var mk = new BMap.Marker(r.point);
+				//var mk = new BMap.Marker(r.point);
+				map.addOverlay(mk);
+				map.panTo(r.point);
+				//alert('您的位置：'+r.point.lng+','+r.point.lat);
+			}else {
+				alert('failed'+this.getStatus());
+			}        
+		},{enableHighAccuracy: true})
+		function searchSthing(thing){
+			var map = new BMap.Map("allmap");                    
+			map.addControl(new BMap.NavigationControl());               
+			map.addControl(new BMap.ScaleControl());                   
+			map.addControl(new BMap.OverviewMapControl()); 
+			geolocation.getCurrentPosition(function(r){
+				if(this.getStatus() == BMAP_STATUS_SUCCESS){
+					//var mk = new BMap.Marker(r.point);
+					var icon = new BMap.Icon('http://wx.58haha.cn/1.png', new BMap.Size(20, 32), {
+						anchor: new BMap.Size(10, 30)
+					});
+					var mk = new BMap.Marker(r.point, {
+						icon: icon
+					});
+					map.addOverlay(mk);
+					map.panTo(r.point);
+					var lng = r.point.lng;
+					var lat = r.point.lat;
+					//alert('您的位置：'+r.point.lng+','+r.point.lat);
+					var point=new BMap.Point(lng, lat);
+					map.centerAndZoom(point, 15);
+					addMarker(map,point);
+					var gc = new BMap.Geocoder();
+					gc.getLocation(point, function(rs) {
+						var addComp = rs.addressComponents;
+						//alert(addComp.province + ", " + addComp.city + ", "+ addComp.district + ", " + addComp.street + ", "+ addComp.streetNumber);
+					});
+					var local = new BMap.LocalSearch(map, {
+						renderOptions: {map: map, panel: "results"}
+					});
+					local.searchNearby(thing,point); 
+				}else {
+					alert('failed'+this.getStatus());
+				}        
+			},{enableHighAccuracy: true})
+		}
+		function addMarker(map,point){
+			var icon = new BMap.Icon('http://wx.58haha.cn/1.png', new BMap.Size(20, 32), {
+				anchor: new BMap.Size(10, 30)
+			});
+			var mk = new BMap.Marker(point, {
+				icon: icon
+			});
+			//map.addOverlay(mk);
+		}
+		</script>
+		<script type="text/javascript">
+			$(".catalog a").click(function(){
+				var g=$(".catalog a").index(this)
+				$(".catalog a").removeClass('cur');
+				$(this).addClass('cur');
+			});
+			 if(jQuery('.catalog span').hasClass("cur")){
+				$("#allmap").hide();
+			 }else{
+				$("#allmap").show();
+			 }
+		
+			function hideMap(){
+				if(!jQuery('.catalog a').hasClass("cur")){
+					return false;
+				}
+				$("#results").show();
+				$(".catalog span").removeClass('cur');
+				$(".catalog .sp1").addClass('cur');
+				$("#allmap").hide();
+				$("#allmap").css('overflow','auto');
+				$("body").css('overflow','auto');
+				$("html").css('overflow','auto');
+			}
+			function showMap(){
+				$(".catalog span").removeClass('cur');
+				$(".catalog .sp2").addClass('cur');
+				$("#allmap").show();
+				$("#results").hide();
+				$("#allmap").css('overflow','hidden');
+				$("body").css('overflow','hidden');
+				$("html").css('overflow','hidden');
+			}
+			$(function(){
+				$(".catalog .sp2").addClass('cur');
+			})
+	</script>
+</html>

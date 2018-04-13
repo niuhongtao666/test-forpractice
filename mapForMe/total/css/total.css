@@ -1,0 +1,29 @@
+.search{
+	width: 100%;
+	height: 0.2rem;
+	margin-top: 0.01rem;
+	position: relative;
+}
+.search #search{
+	width: 1.5rem;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	border: 0.01rem solid #000;
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	outline-style: none;
+}
+.search .searchInfo{
+	width: 0.38rem;
+    display: inline-block;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    font-size: 0.12rem;
+    border: 0.01rem solid black;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    top: 0rem;
+    left: 1.7rem;
+}

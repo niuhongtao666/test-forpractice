@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9dad4be2-2132-468a-9ce2-5d797b71a786" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/translate/datouwang.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translate/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translate/md5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="test.iws" />
@@ -24,32 +21,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="translate.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/translate/translate.html">
+      <file leaf-file-name="forth-map-文字当前位置.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mapForMe/forth-map-文字当前位置.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="75">
+              <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datouwang.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/translate/datouwang.js">
+      <file leaf-file-name="sixth-map.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mapForMe/sixth-map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state relative-caret-position="71">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#2733#2772#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trans.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/translate/trans.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -60,8 +48,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -71,14 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/左右布局.html" />
-        <option value="$PROJECT_DIR$/页面切换/changeFade.js" />
-        <option value="$PROJECT_DIR$/页面切换/页面切换淡入淡出.html" />
-        <option value="$PROJECT_DIR$/页面切换/页面切换.html" />
-        <option value="$PROJECT_DIR$/页面切换/212first.html" />
-        <option value="$PROJECT_DIR$/页面切换/212second.html" />
-        <option value="$PROJECT_DIR$/页面切换/changeFade.css" />
-        <option value="$PROJECT_DIR$/tabqiehuan.html" />
         <option value="$PROJECT_DIR$/tab切换.html" />
         <option value="$PROJECT_DIR$/learningAngular/01HelloWorld.html" />
         <option value="$PROJECT_DIR$/learningAngular/$scope + $rootScope.html" />
@@ -122,6 +102,14 @@
         <option value="$PROJECT_DIR$/changeLanguage.html" />
         <option value="$PROJECT_DIR$/translate/translate.html" />
         <option value="$PROJECT_DIR$/translate/trans.js" />
+        <option value="$PROJECT_DIR$/HTML 5调用摄像头并进行拍照.html" />
+        <option value="$PROJECT_DIR$/photo.html" />
+        <option value="$PROJECT_DIR$/mapForMe/first-map.html" />
+        <option value="$PROJECT_DIR$/mapForMe/second-map.html" />
+        <option value="$PROJECT_DIR$/mapForMe/third-map.html" />
+        <option value="$PROJECT_DIR$/mapForMe/fifth-map.html" />
+        <option value="$PROJECT_DIR$/mapForMe/forth-map.html" />
+        <option value="$PROJECT_DIR$/mapForMe/sixth-map.html" />
       </list>
     </option>
   </component>
@@ -132,8 +120,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="71" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="829" />
   </component>
@@ -143,6 +130,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,13 +141,12 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="translate" type="462c0819:PsiDirectoryNode" />
+              <item name="mapForMe" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,14 +278,16 @@
       <workItem from="1523257240614" duration="5704000" />
       <workItem from="1523334883546" duration="561000" />
       <workItem from="1523348979943" duration="3211000" />
+      <workItem from="1523419594495" duration="5758000" />
+      <workItem from="1523437607384" duration="2730000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232215000" />
+    <option name="totallyTimeSpent" value="240703000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="71" width="1440" height="829" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21597221" />
@@ -353,13 +342,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/learningAngular/angular.min.1-1-5.js" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/01+01(angular1.2版本之前控制器的写法).html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/02+01(加1减1小例子).html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/嵌套控制器.html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/03+01(表达式解析过程).html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/js/index.js" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/pingjia.html" />
     <entry file="file://$PROJECT_DIR$/learningAngular/04+01（$filter过滤器lowercase).html" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
@@ -387,7 +369,6 @@
     <entry file="file://$PROJECT_DIR$/插值字符串回忆.html" />
     <entry file="file://$PROJECT_DIR$/插值字符串.html" />
     <entry file="file://$PROJECT_DIR$/2.html" />
-    <entry file="file://$PROJECT_DIR$/0向上取整.html" />
     <entry file="file://$PROJECT_DIR$/a-href.html" />
     <entry file="file://$PROJECT_DIR$/angularjs 分页.html" />
     <entry file="file://$PROJECT_DIR$/index.html" />
@@ -445,37 +426,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translate/md5.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/translate/datouwang.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/translate/translate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HTML 5调用摄像头并进行拍照.html" />
     <entry file="file://$PROJECT_DIR$/translate/trans.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0向上取整.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapForMe/first-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapForMe/fifth-map-yes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="e#400#426#0" expanded="true" />
+            <element signature="e#433#465#0" expanded="true" />
+            <element signature="e#523#550#0" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapForMe/second-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapForMe/third-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapForMe/forth-map-文字当前位置.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mapForMe/sixth-map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="e#2733#2772#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
