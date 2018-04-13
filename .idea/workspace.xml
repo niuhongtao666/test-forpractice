@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9dad4be2-2132-468a-9ce2-5d797b71a786" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9dad4be2-2132-468a-9ce2-5d797b71a786" name="Default" comment="" />
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,23 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="forth-map-文字当前位置.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mapForMe/forth-map-文字当前位置.html">
+      <file leaf-file-name="04+12（uppercase过滤器）.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learningAngular/04+12（uppercase过滤器）.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sixth-map.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mapForMe/sixth-map.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-              <folding>
-                <element signature="e#2733#2772#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -59,16 +45,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tab切换.html" />
-        <option value="$PROJECT_DIR$/learningAngular/01HelloWorld.html" />
-        <option value="$PROJECT_DIR$/learningAngular/$scope + $rootScope.html" />
-        <option value="$PROJECT_DIR$/learningAngular/02$scope + $rootScope.html" />
-        <option value="$PROJECT_DIR$/1.html" />
-        <option value="$PROJECT_DIR$/2.html" />
-        <option value="$PROJECT_DIR$/learningAngular/angular.min.1-1-5.js" />
-        <option value="$PROJECT_DIR$/learningAngular/01+01.html" />
-        <option value="$PROJECT_DIR$/learningAngular/02+01(加1减1小例子).html" />
-        <option value="$PROJECT_DIR$/learningAngular/嵌套控制器.html" />
         <option value="$PROJECT_DIR$/a-href.html" />
         <option value="$PROJECT_DIR$/编辑光标.html" />
         <option value="$PROJECT_DIR$/learningAngular/03+01(表达式解析过程).html" />
@@ -110,6 +86,16 @@
         <option value="$PROJECT_DIR$/mapForMe/fifth-map.html" />
         <option value="$PROJECT_DIR$/mapForMe/forth-map.html" />
         <option value="$PROJECT_DIR$/mapForMe/sixth-map.html" />
+        <option value="$PROJECT_DIR$/关闭当前页面兼容的代码.js" />
+        <option value="$PROJECT_DIR$/openAndClose/open.html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+07(json).html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+08（limitTo过滤器）.html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+09（lowercase过滤器）.html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+10（number过滤器）.html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+11（orderBy过滤器）+01（参数为函数）.html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+11(orderBy过滤器)+03（参数为数组).html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+11(orderBy过滤器)+02（参数为字符串）.html" />
+        <option value="$PROJECT_DIR$/learningAngular/04+12（uppercase过滤器）.html" />
       </list>
     </option>
   </component>
@@ -122,7 +108,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="829" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -130,7 +116,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,12 +126,13 @@
             <path>
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="mapForMe" type="462c0819:PsiDirectoryNode" />
+              <item name="learningAngular" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,14 +146,15 @@
     <property name="node.js.selected.package.prettier" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\test\learningAngular" />
-      <recent name="C:\test\页面切换" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learningAngular/js" />
+      <recent name="$PROJECT_DIR$/openAndClose" />
       <recent name="$PROJECT_DIR$/translate" />
       <recent name="C:\test" />
       <recent name="C:\test\图片上传" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\test\learningAngular" />
       <recent name="C:\test\页面切换" />
     </key>
   </component>
@@ -280,14 +267,15 @@
       <workItem from="1523348979943" duration="3211000" />
       <workItem from="1523419594495" duration="5758000" />
       <workItem from="1523437607384" duration="2730000" />
+      <workItem from="1523593082609" duration="14959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240703000" />
+    <option name="totallyTimeSpent" value="255662000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21597221" />
@@ -311,19 +299,19 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2203514" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -342,27 +330,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/learningAngular/04+01（$filter过滤器lowercase).html" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="226" selection-start-line="226" selection-end-line="226" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/将时间转换成时间戳.html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/01HelloWorld.html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/04+02(过滤器之uppercase).html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/04+03(过滤器之number).html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/03+02（插值表达式）.html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/03+01(解析angularjs表达式).html" />
-    <entry file="file://$PROJECT_DIR$/图片上传/jquery.min.js" />
-    <entry file="file://$PROJECT_DIR$/通过AngularJS实现图片上传及缩略图展示.html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/04+05(date过滤器).html" />
-    <entry file="file://$PROJECT_DIR$/work.jpg" />
-    <entry file="file://$PROJECT_DIR$/jquery.min.js" />
-    <entry file="file://$PROJECT_DIR$/图片上传/imageUpload.html" />
-    <entry file="file://$PROJECT_DIR$/type为file显示文字.html" />
     <entry file="file://$PROJECT_DIR$/angular.css" />
     <entry file="file://$PROJECT_DIR$/IE滤镜.html" />
     <entry file="file://$PROJECT_DIR$/编辑光标.html" />
@@ -387,20 +354,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/时间戳转成日期.html" />
-    <entry file="file://$PROJECT_DIR$/learningAngular/04+06+01（filter-第二个参数为true,false）.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learningAngular/04+06（filter--参数字符串）.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learningAngular/04+06+02（filter 第二个参数为函数）.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -476,12 +429,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="e#400#426#0" expanded="true" />
-            <element signature="e#433#465#0" expanded="true" />
-            <element signature="e#523#550#0" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,20 +446,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mapForMe/forth-map-文字当前位置.html">
+    <entry file="file://$PROJECT_DIR$/mapForMe/sixth-map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        <state relative-caret-position="15">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mapForMe/sixth-map.html">
+    <entry file="file://$PROJECT_DIR$/mapForMe/forth-map-文字当前位置.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="e#2733#2772#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+06（filter--参数字符串）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+06+01（filter-第二个参数为true,false）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openAndClose/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/关闭当前页面兼容的代码.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openAndClose/open.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/03+01(解析angularjs表达式).html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+01（$filter过滤器lowercase).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+07(json).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/嵌套控制器.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+08（limitTo过滤器）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+09（lowercase过滤器）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="79" lean-forward="true" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="1" column="478" selection-start-line="1" selection-start-column="478" selection-end-line="1" selection-end-column="478" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+10（number过滤器）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+11（orderBy过滤器）+01（参数为函数）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+11(orderBy过滤器)+03（参数为数组).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="88" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+11(orderBy过滤器)+02（参数为字符串）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="159" lean-forward="true" selection-start-line="8" selection-start-column="159" selection-end-line="8" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learningAngular/04+12（uppercase过滤器）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>

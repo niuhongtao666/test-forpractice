@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>number过滤器</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="angular1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div>{{123456789|number}}</div><!--123,456,789-->
+    <div>{{123.234|number:1}}</div><!--123.2-->
+    <div>{{123.234|number:4}}</div><!--123.2340-->
+    <!--第二个参数如果超过小数的位数，那就就会补充0-->
+    <div id="notNum">{{"123abd"|number}}</div>
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+
+</script>
+</html>

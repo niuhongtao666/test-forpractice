@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>orderBy过滤器-参数为字符串</title>
+    <script src="angular1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div>{{[{"name":"zhanqiang","age":20},{"name":"xiaosan","age":29}]|orderBy:'name'}}</div><!--[{"name":"xiaosan","age":29},{"name":"zhanqiang","age":20}]-->
+    <div>{{[{"name":"zhanqiang","age":20},{"name":"xiaosan","age":29}]|orderBy:'name':true}}</div><!--[{"name":"zhanqiang","age":20},{"name":"xiaosan","age":29}]使用第二个参数那么排序就会被强制更改-->
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+</script>
+</html>

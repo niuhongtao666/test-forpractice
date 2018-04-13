@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <input type="text" id="url">
+        <button id="btn">开始</button>
+    </div>
+</body>
+<script>
+    $("#btn").on("click",function () {
+        var url=$("#url").val();
+        console.log(url);
+        if(url){
+            setInterval(function () {
+                window.location.href=url;
+            },1000);
+        }
+    })
+</script>
+</html>

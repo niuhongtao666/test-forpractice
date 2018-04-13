@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>orderBy过滤器-参数为数组</title>
+    <script src="angular1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div>{{[{"name":"zhansgan","age":21},{"name":"xiaoli","age":34},{"name":"zhansgan","age":10}]|orderBy:["name","age"]}}</div>
+<!--[{"name":"xiaoli","age":34},{"name":"zhansgan","age":10},{"name":"zhansgan","age":21}]-->
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+</script>
+</html>

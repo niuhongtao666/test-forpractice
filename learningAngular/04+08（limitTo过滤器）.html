@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="angular1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <!--正值从左开始，负值从又开始-->
+    <div>{{ "my name is Tom" | limitTo:4}}</div><!--my n-->
+    <div>{{ "my country is the People's Republic of China"| limitTo:-5}}</div><!--China-->
+    <div>{{["laoda","laoer","laosan","laosi"] | limitTo:2}}</div><!--["laoda","laoer"]-->
+</body>
+<script>
+    var app=angular.module("myApp",[]);
+</script>
+</html>
